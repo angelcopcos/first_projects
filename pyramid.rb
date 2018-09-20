@@ -1,41 +1,18 @@
-beatles = [
-  {
-    name: nil,
-    nickname: "The Smart One"
-  },
-  {
-    name: nil,
-    nickname: "The Funny One"
-  },
-  {
-    name: nil,
-    nickname: "The Cute One"
-    },
-  {
-    name: nil,
-    nickname: "The Quiet One"
-  }
-]
+i=1
+k=5
+t=5
 
-name = ["John", "Ringo", "Paul", "George"]
-
-i = 0
-while i < beatles.length
-  case beatles[i][:nickname]
-    when "The Smart One"
-    beatles[i][:name] = "John"
-    when "The Funny One"
-    beatles[i][:name] = "Ringo"
-    when "The Cute One"
-    beatles[i][:name] = "Paul"
-  when "The Quiet One"
-    beatles[i][:name] = "George"
+i.upto(k) do
+  t.times do
+    print ' '
   end
-  i += 1
-end
 
-i = 0
-while i < beatles.length
-  puts "Hi, I'm #{beatles[i][:name]}.  I'm #{beatles[i][:nickname]}!"
+  (2 * i - 1).times do
+    print '*'
+  end
+
+  print "\n"
+
+  t -= 1
   i += 1
 end
